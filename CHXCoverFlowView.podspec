@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "CHXCoverFlowView"
-  s.version = "0.1"
+  s.version = "0.1.1"
   s.license = "MIT"
   s.summary = "Coverflow for view images like the macOS's finder."
   s.homepage = "https://github.com/cuzv/CHXCoverFlowView"

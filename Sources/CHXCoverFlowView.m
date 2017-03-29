@@ -44,16 +44,13 @@
 
 - (instancetype)initWithItemInteritemSpacing:(CGFloat)itemInteritemSpacing {
     self = [super init];
-    if (!self) {
-        return nil;
+    if (self) {
+        _itemInteritemSpacing = itemInteritemSpacing;
+        self.translatesAutoresizingMaskIntoConstraints = NO;
+        self.userInteractionEnabled = NO;
+        self.clipsToBounds = YES;
+        [self _cf_buildUI];
     }
-    
-    _itemInteritemSpacing = itemInteritemSpacing;
-    self.translatesAutoresizingMaskIntoConstraints = NO;
-    self.userInteractionEnabled = NO;
-    self.clipsToBounds = YES;
-    
-    [self _cf_buildUI];
     
     return self;
 }

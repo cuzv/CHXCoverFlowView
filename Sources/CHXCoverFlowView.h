@@ -39,8 +39,8 @@
 @property (nonatomic, assign, readonly) CGFloat itemWidthFactor;
 /// Defatule value 20px.
 @property (nonatomic, assign, readonly) CGFloat itemInteritemSpacing;
-- (nullable instancetype)init;
-- (nullable instancetype)initWithItemWidthFactor:(CGFloat)itemWidthFactor itemInteritemSpacing:(CGFloat)itemInteritemSpacing;
+- (nonnull instancetype)init;
+- (nonnull instancetype)initWithItemWidthFactor:(CGFloat)itemWidthFactor itemInteritemSpacing:(CGFloat)itemInteritemSpacing;
 
 @property (nullable, nonatomic, weak) id<CHXCoverFlowViewDataSource> dataSource;
 @property (nullable, nonatomic, weak) id<CHXCoverFlowViewDelegate> delegate;
